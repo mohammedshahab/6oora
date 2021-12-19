@@ -76,22 +76,325 @@ class _MyHomePageState extends State<MyHomePage> {
         body: ListView(
           children: [
             Container(
+              height: 200,
+            ),
+            Container(
               child: Card(
+                color: Colors.blue,
+                elevation: 20,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(40),
+                ),
                 child: Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          child: Text("Premier league"),
+                          child: Text(
+                            "Premier league",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 70,
                         )
                       ],
                     ),
-                    Container(child: Card(
-                      child: Row(children: [
-                        Container(child: Image.asset("name"),)
-                      ],),
-                    ),)
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 100,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                            Container(
+                              child: Text("2"),
+                            ),
+                            Container(
+                              child: Text(":"),
+                            ),
+                            Container(
+                              child: Text("1"),
+                            ),
+                            Container(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset("imge/prsha.jfif"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
