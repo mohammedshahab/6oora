@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
-    });
+    }); 
   }
 
   @override
@@ -69,9 +69,18 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
         appBar: AppBar(
-          // Here we take the value from the MyHomePage object that was created by
-          // the App.build method, and use it to set our appbar title.
-          title: Text(widget.title),
+          leading: Icon(Icons.menu),
+          title: Text(
+            "SOCCERBOARD",
+            style: TextStyle(color: Colors.black),
+          ),
+          centerTitle: true,
+          actions: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Icon(Icons.search),
+            ),
+          ],
         ),
         body: ListView(
           children: [
