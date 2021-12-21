@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
-    }); 
+    });
   }
 
   @override
@@ -82,13 +82,47 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
-        body: ListView(
-          children: [
-            Container(
-              height: 200,
+        body: Column(children: [
+          Container(
+            height: 100,
+          ),
+          Container(
+            width: 300,
+            height: 100,
+            child: Card(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    child: Image.asset("imge/prsha.jfif"),
+                  ),
+                  Container(
+                    child: Text("2"),
+                  ),
+                  Container(
+                    child: Text(":"),
+                  ),
+                  Container(
+                    child: Text("1"),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    child: Image.asset("imge/prsha.jfif"),
+                  ),
+                ],
+              ),
             ),
-            Container(
-              child: Card(
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Expanded(
+              child: ListView(
+            children: [
+              Card(
                 color: Colors.blue,
                 elevation: 20,
                 shape: RoundedRectangleBorder(
@@ -107,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         SizedBox(
                           height: 70,
-                        )
+                        ),
                       ],
                     ),
                     Container(
@@ -406,9 +440,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
-              ),
-            )
-          ],
-        ));
+              )
+            ],
+          )),
+        ]));
   }
 }
