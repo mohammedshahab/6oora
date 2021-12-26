@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'mohammed',
+      title: '6ooba',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,18 +28,23 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-class WelcomeScreen extends StatelessWidget{
+
+class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    try{
-       Future.delayed(Duration(seconds: 3),(){
-      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=> MyHomePage(title: 'Home Page',) ));
-    });
-    } catch(e){
+    try {
+      Future.delayed(Duration(seconds: 3), () {
+        Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+                builder: (context) => MyHomePage(
+                      title: 'Home Page',
+                    )));
+      });
+    } catch (e) {
       print(e);
     }
-   
 
     return Scaffold(
       body: Center(
@@ -47,9 +52,7 @@ class WelcomeScreen extends StatelessWidget{
       ),
     );
   }
-
 }
-
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -152,14 +155,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         Container(
                           width: 100,
                           height: 100,
-                          child: Image.asset("imge/prsha.jfif"),
+                          child: Image.asset("imge/real.jfif"),
                         ),
                         SizedBox(
                           height: 10,
                         ),
                         Container(
                           child: Text(
-                            "barshlona",
+                            "Real Madrid",
                             style: TextStyle(fontSize: 17, color: Colors.white),
                           ),
                         ),
@@ -262,10 +265,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                   Container(
                                     width: 100,
                                     height: 100,
-                                    child: Image.asset("imge/prsha.jfif"),
+                                    child: Image.asset("imge/PSG.jfif"),
                                   ),
                                   Container(
-                                    child: Text("barshlona",
+                                    child: Text("PSG",
                                         style: TextStyle(
                                           fontSize: 17,
                                         )),
@@ -277,7 +280,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
-                              child: Text("2",
+                              child: Text("5",
                                   style: TextStyle(
                                     fontSize: 50,
                                   )),
@@ -340,10 +343,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                   Container(
                                     width: 100,
                                     height: 100,
-                                    child: Image.asset("imge/prsha.jfif"),
+                                    child: Image.asset("imge/PSG.jfif"),
                                   ),
                                   Container(
-                                    child: Text("barshlona",
+                                    child: Text("PSG",
                                         style: TextStyle(
                                           fontSize: 17,
                                         )),
@@ -373,7 +376,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
-                              child: Text("1",
+                              child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
                                   )),
@@ -387,10 +390,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                   Container(
                                     width: 100,
                                     height: 100,
-                                    child: Image.asset("imge/prsha.jfif"),
+                                    child: Image.asset("imge/real.jfif"),
                                   ),
                                   Container(
-                                    child: Text("barshlona",
+                                    child: Text("Real Madrid",
                                         style: TextStyle(
                                           fontSize: 17,
                                         )),
