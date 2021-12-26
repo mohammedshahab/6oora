@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -68,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+        backgroundColor: Colors.blue[700],
         appBar: AppBar(
           leading: Icon(Icons.menu),
           title: Text(
@@ -83,41 +86,119 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
         body: Column(children: [
-          Container(
-            height: 100,
+          SizedBox(
+            height: 20,
           ),
           Container(
-            width: 300,
-            height: 100,
+            alignment: Alignment.center,
+            width: 200,
+            height: 40,
             child: Card(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    child: Image.asset("imge/prsha.jfif"),
-                  ),
-                  Container(
-                    child: Text("2"),
-                  ),
-                  Container(
-                    child: Text(":"),
-                  ),
-                  Container(
-                    child: Text("1"),
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    child: Image.asset("imge/prsha.jfif"),
-                  ),
-                ],
+              color: Colors.blue[900],
+              child: Text(
+                "PREMER LEAGUE",
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
-
-        
+          Container(
+            child: Text(
+              "Sun,12/26",
+              style: TextStyle(fontSize: 16, color: Colors.white),
+            ),
+          ),
+          SizedBox(
+            height: 35,
+          ),
+          Container(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const DetailScreen();
+                }));
+              },
+              child: Hero(
+                tag: 'imageHero',
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          width: 100,
+                          height: 100,
+                          child: Image.asset("imge/prsha.jfif"),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Container(
+                          child: Text(
+                            "barshlona",
+                            style: TextStyle(fontSize: 17, color: Colors.white),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      child: Text(
+                        "2",
+                        style: TextStyle(fontSize: 50, color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      child: Text(
+                        ":",
+                        style: TextStyle(fontSize: 50, color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      child: Text(
+                        "1",
+                        style: TextStyle(fontSize: 50, color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          Container(
+                            width: 100,
+                            height: 100,
+                            child: Image.asset("imge/prsha.jfif"),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Container(
+                            child: Text(
+                              "barshlona",
+                              style:
+                                  TextStyle(fontSize: 17, color: Colors.white),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
           SizedBox(
             height: 30,
           ),
@@ -125,7 +206,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ListView(
             children: [
               Card(
-                color: Colors.blue,
+                color: Colors.white70,
                 elevation: 20,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40),
@@ -138,7 +219,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Container(
                           child: Text(
                             "Premier league",
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: 30),
                           ),
                         ),
                         SizedBox(
@@ -147,304 +228,837 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Container(
-                      width: 300,
-                      height: 100,
+                      width: 450,
+                      height: 150,
                       child: Card(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              child: Text("2"),
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text(":"),
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Container(
-                              child: Text("1"),
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
                             Container(
-                              width: 100,
-                              height: 100,
-                              child: Image.asset("imge/prsha.jfif"),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
                       ),
-                    )
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      width: 450,
+                      height: 150,
+                      child: Card(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Container(
+                              child: Text("2",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Container(
+                              child: Text(":",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Container(
+                              child: Text("1",
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  )),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Container(
+                              child: Column(
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    child: Image.asset("imge/prsha.jfif"),
+                                  ),
+                                  Container(
+                                    child: Text("barshlona",
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
                   ],
                 ),
               )
             ],
           )),
         ]));
+  }
+}
+
+//this is sconed page--------------------
+class DetailScreen extends StatelessWidget {
+  const DetailScreen({key}) : super(key: key);
+
+  // This widget is the root of your application.
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          leading: Icon(Icons.menu),
+          title: Text(
+            "SOCCERBOARD",
+            style: TextStyle(color: Colors.black),
+          ),
+          centerTitle: true,
+          actions: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Icon(Icons.search),
+            ),
+          ],
+        ),
+        body: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.only(top: 20),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Hero(
+                  tag: 'imageHero',
+                  child: Container(
+                      child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text("data"),
+                  )),
+                ),
+              ),
+            )
+          ],
+        ));
   }
 }
