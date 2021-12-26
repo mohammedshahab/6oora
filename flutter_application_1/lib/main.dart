@@ -24,10 +24,32 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: WelcomeScreen(),
     );
   }
 }
+class WelcomeScreen extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    try{
+       Future.delayed(Duration(seconds: 3),(){
+      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=> MyHomePage(title: 'Home Page',) ));
+    });
+    } catch(e){
+      print(e);
+    }
+   
+
+    return Scaffold(
+      body: Center(
+        child: Image.asset('imge/6oba.png'),
+      ),
+    );
+  }
+
+}
+
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
