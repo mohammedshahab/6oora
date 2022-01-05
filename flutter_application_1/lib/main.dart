@@ -141,7 +141,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             child: GestureDetector(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
                   return const DetailScreen();
                 }));
               },
@@ -1543,23 +1544,6 @@ class DetailScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: Hero(
-                      tag: 'imageHero',
-                      child: Container(
-                          child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        child: Text("data"),
-                      )),
-                    ),
-                  ),
-                )
               ],
             )));
   }
