@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -94,6 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+
     return Scaffold(
         backgroundColor: Colors.blue[700],
         appBar: AppBar(
@@ -135,9 +137,9 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 16, color: Colors.white),
             ),
           ),
-          SizedBox(
-            height: 35,
-          ),
+          // SizedBox(
+          //   height: 35,
+          // ),
           Container(
             child: GestureDetector(
               onTap: () {
@@ -154,8 +156,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     Column(
                       children: [
                         Container(
-                          width: 100,
-                          height: 100,
+                          width: 120,
+                          height: 120,
                           child: Image.asset("imge/real.jfif"),
                         ),
                         SizedBox(
@@ -173,6 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 20,
                     ),
                     Container(
+                      margin: EdgeInsets.only(bottom: 10),
                       child: Text(
                         "2",
                         style: TextStyle(fontSize: 50, color: Colors.white),
@@ -182,6 +185,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 20,
                     ),
                     Container(
+                      margin: EdgeInsets.only(bottom: 10),
                       child: Text(
                         ":",
                         style: TextStyle(fontSize: 50, color: Colors.white),
@@ -191,6 +195,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 20,
                     ),
                     Container(
+                      margin: EdgeInsets.only(bottom: 10),
                       child: Text(
                         "1",
                         style: TextStyle(fontSize: 50, color: Colors.white),
@@ -203,8 +208,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Column(
                         children: [
                           Container(
-                            width: 100,
-                            height: 100,
+                            width: 120,
+                            height: 120,
                             child: Image.asset("imge/prsha.jfif"),
                           ),
                           SizedBox(
@@ -281,6 +286,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("5",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -290,6 +296,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -299,6 +306,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -344,7 +352,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   Container(
                                     width: 100,
                                     height: 100,
-                                    child: Image.asset("imge/PSG.jfif"),
+                                    child: Image.asset("imge/cheelcy.jpg"),
                                   ),
                                   Container(
                                     child: Text("PSG",
@@ -359,6 +367,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -368,6 +377,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -377,6 +387,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -437,6 +448,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -446,6 +458,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -455,6 +468,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -515,6 +529,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -524,6 +539,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -533,6 +549,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -593,6 +610,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -602,6 +620,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -611,6 +630,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -671,6 +691,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -680,6 +701,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -689,6 +711,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -749,6 +772,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -758,6 +782,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -767,6 +792,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -827,6 +853,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -836,6 +863,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -845,6 +873,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -905,6 +934,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -914,6 +944,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -923,6 +954,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -983,6 +1015,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 20,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("2",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -992,6 +1025,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text(":",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -1001,6 +1035,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 15,
                             ),
                             Container(
+                              margin: EdgeInsets.only(bottom: 30),
                               child: Text("1",
                                   style: TextStyle(
                                     fontSize: 50,
@@ -1528,15 +1563,28 @@ class DetailScreen extends StatelessWidget {
 
                       // second tab bar viiew widget
                       Container(
-                        color: Colors.pink,
-                        child: Center(
-                          child: Text(
-                            'Car',
-                          ),
-                        ),
-                      ),
+                          color: Colors.pink,
+                          child: Column(
+                            children: [],
+                          )),
                       Container(
-                        child: Text("DHHDJHDHJDJJD"),
+                        child: Column(
+                          children: [
+                            Container(
+                              child: Card(
+                                child: Row(
+                                  children: [
+                                    Container(
+                                        child: new InkWell(
+                                            child: new Text('Open Browser'),
+                                            onTap: () => launch(
+                                                'https://translate.google.com/?sl=en&tl=ar&op=translate')))
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                       Container(
                         child: Text("DHHDJHDHJDJJD"),
