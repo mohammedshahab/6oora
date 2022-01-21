@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Card(
                 color: Colors.blue[900],
                 child: Text(
-                  "LaLiga",
+                  "premier league",
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.white,
@@ -160,14 +160,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           Container(
                             width: 120,
                             height: 120,
-                            child: Image.asset("LaLiga/prsha.jfif"),
+                            child: Image.asset("premier league/Arsenal.P.jfif"),
                           ),
                           // SizedBox(
                           //   height: 10,
                           // ),
                           Container(
                             child: Text(
-                              "barshlona",
+                              "Arsenal",
                               style:
                                   TextStyle(fontSize: 17, color: Colors.white),
                             ),
@@ -213,14 +213,15 @@ class _MyHomePageState extends State<MyHomePage> {
                             Container(
                               width: 120,
                               height: 120,
-                              child: Image.asset("LaLiga/real.jfif"),
+                              child:
+                                  Image.asset("premier league/Tottenham.jfif"),
                             ),
                             // SizedBox(
                             //   height: 10,
                             // ),
                             Container(
                               child: Text(
-                                "Real Madrid",
+                                "Tottenham",
                                 style: TextStyle(
                                     fontSize: 17, color: Colors.white),
                               ),
@@ -252,7 +253,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: [
                             Container(
                               child: Text(
-                                "LaLiga",
+                                "premier league",
                                 style: TextStyle(fontSize: 30),
                               ),
                             ),
@@ -275,11 +276,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("LaLiga/ashbelea.jpg"),
+                                        child: Image.asset(
+                                            "premier league/Barnsley.jpg"),
                                       ),
                                       Container(
-                                        child: Text("Seville",
+                                        child: Text("Barnsley",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -328,10 +329,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "LaLiga/AthleticBilbao.jfif"),
+                                            "premier league/Benfica.jfif"),
                                       ),
                                       Container(
-                                        child: Text("Athleic Bilbao",
+                                        child: Text("Benfica",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -360,11 +361,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("LaLiga/Atlanta.jfif"),
+                                        child: Image.asset(
+                                            "premier league/Birmingham City.jpg"),
                                       ),
                                       Container(
-                                        child: Text("Atlanta",
+                                        child: Text("Birmingham Ctiy",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -413,10 +414,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "LaLiga/atleticomadrid.L.jfif"),
+                                            "premier league/Blackburn Rovers.jpg"),
                                       ),
                                       Container(
-                                        child: Text("Atletico Madrid",
+                                        child: Text("Blackburn Rovers",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -439,16 +440,103 @@ class _MyHomePageState extends State<MyHomePage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
+                                  child: Expanded(
+                                      child: Column(
+                                    children: [
+                                      Container(
+                                        width: 100,
+                                        height: 100,
+                                        child: Image.asset(
+                                            "premier league/Blackpool.jpg"),
+                                      ),
+                                      Container(
+                                        child: Text("Blackpool",
+                                            style: TextStyle(
+                                              fontSize: 17,
+                                            )),
+                                      ),
+                                    ],
+                                  )),
+                                ),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(bottom: 30),
+                                  child: Text("2",
+                                      style: TextStyle(
+                                        fontSize: 50,
+                                      )),
+                                ),
+                                SizedBox(
+                                  width: 15,
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(bottom: 30),
+                                  child: Text(":",
+                                      style: TextStyle(
+                                        fontSize: 50,
+                                      )),
+                                ),
+                                SizedBox(
+                                  width: 15,
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(bottom: 30),
+                                  child: Text("1",
+                                      style: TextStyle(
+                                        fontSize: 50,
+                                      )),
+                                ),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                Container(
                                     child: Expanded(
                                   child: Column(
                                     children: [
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("LaLiga/btees.jpg"),
+                                        child: Image.asset(
+                                            "premier league/Bolton Wanderers.png"),
                                       ),
                                       Container(
-                                        child: Text("Real Betis",
+                                        child: Text("Bolton Wanderers",
+                                            style: TextStyle(
+                                              fontSize: 17,
+                                            )),
+                                      ),
+                                    ],
+                                  ),
+                                )),
+                              ],
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Container(
+                          width: 450,
+                          height: 150,
+                          child: Card(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                                                    child: Expanded(
+
+                                    child: Column(
+                                    children: [
+                                      Container(
+                                        width: 100,
+                                        height: 100,
+                                        child: Image.asset(
+                                            "premier league/Bournemouth.png"),
+                                      ),
+                                      Container(
+                                        child: Text("Bournemouth",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -496,10 +584,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("LaLiga/getafe.jpg"),
+                                        child: Image.asset(
+                                            "premier league/Liverpool.jfif"),
                                       ),
                                       Container(
-                                        child: Text("Getafe",
+                                        child: Text("Juventus",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -528,11 +617,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("LaLiga/osasona.jpg"),
+                                        child: Image.asset(
+                                            "premier league/Cardiff City.png"),
                                       ),
                                       Container(
-                                        child: Text("Osasona",
+                                        child: Text("Cardiff Ctiy",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -580,11 +669,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("LaLiga/socedad.jpg"),
+                                        child: Image.asset(
+                                            "premier league/man.P.jpg"),
                                       ),
                                       Container(
-                                        child: Text("Real Socedad",
+                                        child: Text("charlton Athletic",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -613,11 +702,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("LaLiga/Cordoba.jpg"),
+                                        child: Image.asset(
+                                            "premier league/cheelcy.P.jpg"),
                                       ),
                                       Container(
-                                        child: Text("Cordoba",
+                                        child: Text("Cheelcy",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -665,10 +754,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("LaLiga/ebar.jpg"),
+                                        child: Image.asset(
+                                            "premier league/Aston-Villa.jfif"),
                                       ),
                                       Container(
-                                        child: Text("Ibar",
+                                        child: Text("Aston Villa",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -697,10 +787,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("LaLiga/alaves.jpg"),
+                                        child: Image.asset(
+                                            "premier league/Crystal Palace.png"),
                                       ),
                                       Container(
-                                        child: Text("Alaves",
+                                        child: Text("Crystal Palace",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -748,10 +839,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("LaLiga/gatsh.jpg"),
+                                        child: Image.asset(
+                                            "premier league/FC-Bayern-Munchen.jfif"),
                                       ),
                                       Container(
-                                        child: Text("kadesh",
+                                        child: Text("Bayern Munchen",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -780,11 +872,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("LaLiga/gernata.jpg"),
+                                        child: Image.asset(
+                                            "premier league/Fulham.png"),
                                       ),
                                       Container(
-                                        child: Text("Granada",
+                                        child: Text("Fulham",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -832,94 +924,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("LaLiga/las.jpg"),
+                                        child: Image.asset(
+                                            "premier league/Hall City.png"),
                                       ),
                                       Container(
-                                        child: Text("Las Palmas",
-                                            style: TextStyle(
-                                              fontSize: 17,
-                                            )),
-                                      ),
-                                    ],
-                                  ),
-                                )),
-                              ],
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Container(
-                          width: 450,
-                          height: 150,
-                          child: Card(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                    child: Expanded(
-                                  child: Column(
-                                    children: [
-                                      Container(
-                                        width: 100,
-                                        height: 100,
-                                        child:
-                                            Image.asset("LaLiga/leventy.jpg"),
-                                      ),
-                                      Container(
-                                        child: Text("Leventi",
-                                            style: TextStyle(
-                                              fontSize: 17,
-                                            )),
-                                      ),
-                                    ],
-                                  ),
-                                )),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(bottom: 30),
-                                  child: Text("2",
-                                      style: TextStyle(
-                                        fontSize: 50,
-                                      )),
-                                ),
-                                SizedBox(
-                                  width: 15,
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(bottom: 30),
-                                  child: Text(":",
-                                      style: TextStyle(
-                                        fontSize: 50,
-                                      )),
-                                ),
-                                SizedBox(
-                                  width: 15,
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(bottom: 30),
-                                  child: Text("1",
-                                      style: TextStyle(
-                                        fontSize: 50,
-                                      )),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Container(
-                                    child: Expanded(
-                                  child: Column(
-                                    children: [
-                                      Container(
-                                        width: 100,
-                                        height: 100,
-                                        child: Image.asset("LaLiga/Murcia.jpg"),
-                                      ),
-                                      Container(
-                                        child: Text("Murcia",
+                                        child: Text("Hall Ctiy",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -1020,11 +1029,11 @@ class _DetailScreenState extends State<DetailScreen> {
                           Container(
                             width: 120,
                             height: 120,
-                            child: Image.asset("LaLiga/prsha.jfif"),
+                            child: Image.asset("premier league/Arsenal.P.jfif"),
                           ),
                           Container(
                             child: Text(
-                              "Real Madrid",
+                              "Arsenal",
                               style:
                                   TextStyle(fontSize: 17, color: Colors.white),
                             ),
@@ -1067,11 +1076,12 @@ class _DetailScreenState extends State<DetailScreen> {
                             Container(
                               width: 120,
                               height: 120,
-                              child: Image.asset("LaLiga/real.jfif"),
+                              child:
+                                  Image.asset("premier league/Tottenham.jfif"),
                             ),
                             Container(
                               child: Text(
-                                "Real Madrid",
+                                "Tottenham",
                                 style: TextStyle(
                                     fontSize: 17, color: Colors.white),
                               ),
@@ -1130,7 +1140,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                             height: 90,
                                             width: 90,
                                             child: Image.asset(
-                                                "LaLiga/prsha.jfif"),
+                                                "premier league/Arsenal.P.jfif"),
                                           ),
                                           Container(
                                             child: Text(
@@ -1342,8 +1352,8 @@ class _DetailScreenState extends State<DetailScreen> {
                                           Container(
                                             height: 90,
                                             width: 90,
-                                            child:
-                                                Image.asset("LaLiga/real.jfif"),
+                                            child: Image.asset(
+                                                "premier league/Tottenham.jfif"),
                                           ),
                                           Container(
                                             child: Text(
@@ -1445,7 +1455,8 @@ class _DetailScreenState extends State<DetailScreen> {
                         child: Column(
                           children: [
                             Container(
-                              child: Image.asset("LaLiga/prsha.jfif"),
+                              child: Image.asset(
+                                  "premier league/Aston-Villa.jfif"),
                             )
                           ],
                         ),
