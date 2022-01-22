@@ -160,7 +160,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Container(
                             width: 120,
                             height: 120,
-                            child: Image.asset("premier league/Arsenal.P.jfif"),
+                            child: Image.asset("imge/premier league/Arsenal.P.jfif"),
                           ),
                           // SizedBox(
                           //   height: 10,
@@ -214,7 +214,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 120,
                               height: 120,
                               child:
-                                  Image.asset("premier league/Tottenham.jfif"),
+                                  Image.asset("imge/premier league/Tottenham.jfif"),
                             ),
                             // SizedBox(
                             //   height: 10,
@@ -277,7 +277,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Barnsley.jpg"),
+                                            "imge/premier league/Barnsley.jpg"),
                                       ),
                                       Container(
                                         child: Text("Barnsley",
@@ -329,7 +329,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Benfica.jfif"),
+                                            "imge/premier league/Benfica.jfif"),
                                       ),
                                       Container(
                                         child: Text("Benfica",
@@ -362,7 +362,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Birmingham City.jpg"),
+                                            "imge/premier league/Birmingham City.jpg"),
                                       ),
                                       Container(
                                         child: Text("Birmingham Ctiy",
@@ -414,7 +414,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Blackburn Rovers.jpg"),
+                                            "imge/premier league/Blackburn Rovers.jpg"),
                                       ),
                                       Container(
                                         child: Text("Blackburn Rovers",
@@ -447,7 +447,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Blackpool.jpg"),
+                                            "imge/premier league/Blackpool.jpg"),
                                       ),
                                       Container(
                                         child: Text("Blackpool",
@@ -499,7 +499,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Bolton Wanderers.png"),
+                                            "imge/premier league/Bolton Wanderers.png"),
                                       ),
                                       Container(
                                         child: Text("Bolton Wanderers",
@@ -533,7 +533,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Bournemouth.png"),
+                                            "imge/premier league/Bournemouth.png"),
                                       ),
                                       Container(
                                         child: Text("Bournemouth",
@@ -585,7 +585,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Liverpool.jfif"),
+                                            "imge/premier league/Liverpool.jfif"),
                                       ),
                                       Container(
                                         child: Text("Juventus",
@@ -618,7 +618,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Cardiff City.png"),
+                                            "imge/premier league/Cardiff City.png"),
                                       ),
                                       Container(
                                         child: Text("Cardiff Ctiy",
@@ -670,7 +670,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/man.P.jpg"),
+                                            "imge/premier league/man.P.jpg"),
                                       ),
                                       Container(
                                         child: Text("charlton Athletic",
@@ -703,7 +703,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/cheelcy.P.jpg"),
+                                            "imge/premier league/cheelcy.P.jpg"),
                                       ),
                                       Container(
                                         child: Text("Cheelcy",
@@ -755,7 +755,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Aston-Villa.jfif"),
+                                            "imge/premier league/Aston-Villa.jfif"),
                                       ),
                                       Container(
                                         child: Text("Aston Villa",
@@ -788,7 +788,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Crystal Palace.png"),
+                                            "imge/premier league/Crystal Palace.png"),
                                       ),
                                       Container(
                                         child: Text("Crystal Palace",
@@ -840,7 +840,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/FC-Bayern-Munchen.jfif"),
+                                            "imge/premier league/FC-Bayern-Munchen.jfif"),
                                       ),
                                       Container(
                                         child: Text("Bayern Munchen",
@@ -873,7 +873,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Fulham.png"),
+                                            "imge/premier league/Fulham.png"),
                                       ),
                                       Container(
                                         child: Text("Fulham",
@@ -925,7 +925,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "premier league/Hall City.png"),
+                                            "imge/premier league/Hall City.png"),
                                       ),
                                       Container(
                                         child: Text("Hall Ctiy",
@@ -1029,7 +1029,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           Container(
                             width: 120,
                             height: 120,
-                            child: Image.asset("premier league/Arsenal.P.jfif"),
+                            child: Image.asset("imge/premier league/Arsenal.P.jfif"),
                           ),
                           Container(
                             child: Text(
@@ -1077,7 +1077,7 @@ class _DetailScreenState extends State<DetailScreen> {
                               width: 120,
                               height: 120,
                               child:
-                                  Image.asset("premier league/Tottenham.jfif"),
+                                  Image.asset("imge/premier league/Tottenham.jfif"),
                             ),
                             Container(
                               child: Text(
@@ -1140,7 +1140,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                             height: 90,
                                             width: 90,
                                             child: Image.asset(
-                                                "premier league/Arsenal.P.jfif"),
+                                                "imge/premier league/Arsenal.P.jfif"),
                                           ),
                                           Container(
                                             child: Text(
@@ -1353,7 +1353,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                             height: 90,
                                             width: 90,
                                             child: Image.asset(
-                                                "premier league/Tottenham.jfif"),
+                                                "imge/premier league/Tottenham.jfif"),
                                           ),
                                           Container(
                                             child: Text(
@@ -1456,7 +1456,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           children: [
                             Container(
                               child: Image.asset(
-                                  "premier league/Aston-Villa.jfif"),
+                                  "imge/premier league/Aston-Villa.jfif"),
                             )
                           ],
                         ),

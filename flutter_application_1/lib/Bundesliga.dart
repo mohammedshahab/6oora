@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Card(
                 color: Colors.blue[900],
                 child: Text(
-                  "LaLiga",
+                  "BUNDESLIGA",
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.white,
@@ -160,14 +160,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           Container(
                             width: 120,
                             height: 120,
-                            child: Image.asset("imge/LaLiga/prsha.jfif"),
+                            child: Image.asset(
+                                "imge/Bundesliga/FC-Bayern-Munchen.jfif"),
                           ),
                           // SizedBox(
                           //   height: 10,
                           // ),
                           Container(
                             child: Text(
-                              "barshlona",
+                              "Bayern Munchen",
                               style:
                                   TextStyle(fontSize: 17, color: Colors.white),
                             ),
@@ -213,14 +214,14 @@ class _MyHomePageState extends State<MyHomePage> {
                             Container(
                               width: 120,
                               height: 120,
-                              child: Image.asset("imge/LaLiga/real.jfif"),
+                              child: Image.asset("imge/Bundesliga/Wolfsburg.png"),
                             ),
                             // SizedBox(
                             //   height: 10,
                             // ),
                             Container(
                               child: Text(
-                                "Real Madrid",
+                                "Wolfsburg",
                                 style: TextStyle(
                                     fontSize: 17, color: Colors.white),
                               ),
@@ -252,7 +253,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: [
                             Container(
                               child: Text(
-                                "LaLiga",
+                                "BUNDESLIGA",
                                 style: TextStyle(fontSize: 30),
                               ),
                             ),
@@ -276,10 +277,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child:
-                                            Image.asset("imge/LaLiga/ashbelea.jpg"),
+                                            Image.asset("imge/Bundesliga/Colin.png"),
                                       ),
                                       Container(
-                                        child: Text("Seville",
+                                        child: Text("Colin",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -328,10 +329,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "imge/LaLiga/AthleticBilbao.jfif"),
+                                            "imge/Bundesliga/Dresden.png"),
                                       ),
                                       Container(
-                                        child: Text("Athleic Bilbao",
+                                        child: Text("Dresden",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -360,11 +361,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("imge/LaLiga/Atlanta.jfif"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Fortuna Dusseldorf.png"),
                                       ),
                                       Container(
-                                        child: Text("Atlanta",
+                                        child: Text("Fortuna Dusseldorf",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -413,10 +414,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                         width: 100,
                                         height: 100,
                                         child: Image.asset(
-                                            "imge/LaLiga/atleticomadrid.L.jfif"),
+                                            "imge/Bundesliga/Freiberg.png"),
                                       ),
                                       Container(
-                                        child: Text("Atletico Madrid",
+                                        child: Text("Freiberg",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -445,10 +446,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("imge/LaLiga/btees.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Grouther Fort.png"),
                                       ),
                                       Container(
-                                        child: Text("Real Betis",
+                                        child: Text("Grouther Fort",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -496,10 +498,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("imge/LaLiga/getafe.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Hamburg.png"),
                                       ),
                                       Container(
-                                        child: Text("Getafe",
+                                        child: Text("Hamburg",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -528,11 +531,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("imge/LaLiga/osasona.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Hannover 96.png"),
                                       ),
                                       Container(
-                                        child: Text("Osasona",
+                                        child: Text("Hannover 96",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -580,11 +583,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("imge/LaLiga/socedad.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Hertha Berlin.png"),
                                       ),
                                       Container(
-                                        child: Text("Real Socedad",
+                                        child: Text("Hertha Berlin",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -613,11 +616,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("imge/LaLiga/Cordoba.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Holstein Kiel.png"),
                                       ),
                                       Container(
-                                        child: Text("Cordoba",
+                                        child: Text("Holstein Kiel",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -665,10 +668,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("imge/LaLiga/ebar.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Kaiserslautern.png"),
                                       ),
                                       Container(
-                                        child: Text("Ibar",
+                                        child: Text("Kaiserslautern",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -697,10 +701,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("imge/LaLiga/alaves.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Karlsruhe.png"),
                                       ),
                                       Container(
-                                        child: Text("Alaves",
+                                        child: Text("Karlsruhe",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -748,10 +753,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("imge/LaLiga/gatsh.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Locomotive Leipzig.png"),
                                       ),
                                       Container(
-                                        child: Text("kadesh",
+                                        child: Text("Locomotive Leipzig",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -780,11 +786,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("imge/LaLiga/gernata.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Nuremberg.png"),
                                       ),
                                       Container(
-                                        child: Text("Granada",
+                                        child: Text("Nuremberg",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -832,10 +838,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("imge/LaLiga/las.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Rapid Vienna.png"),
                                       ),
                                       Container(
-                                        child: Text("Las Palmas",
+                                        child: Text("Rapid Vienna",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -864,11 +871,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child:
-                                            Image.asset("imge/LaLiga/leventy.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Root Vice Essen.png"),
                                       ),
                                       Container(
-                                        child: Text("Leventi",
+                                        child: Text("Root Vice Essen",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -916,10 +923,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Container(
                                         width: 100,
                                         height: 100,
-                                        child: Image.asset("imge/LaLiga/Murcia.jpg"),
+                                        child: Image.asset(
+                                            "imge/Bundesliga/Saarbrucken.png"),
                                       ),
                                       Container(
-                                        child: Text("Murcia",
+                                        child: Text("Saarbrucken",
                                             style: TextStyle(
                                               fontSize: 17,
                                             )),
@@ -996,7 +1004,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   child: Card(
                     color: Colors.blue[900],
                     child: Text(
-                      "LaLiga",
+                      "BUNDESLIGA",
                       style: TextStyle(
                         fontSize: 18,
                         color: Colors.white,
@@ -1020,11 +1028,12 @@ class _DetailScreenState extends State<DetailScreen> {
                           Container(
                             width: 120,
                             height: 120,
-                            child: Image.asset("imge/LaLiga/prsha.jfif"),
+                            child: Image.asset(
+                                "imge/Bundesliga/FC-Bayern-Munchen.jfif"),
                           ),
                           Container(
                             child: Text(
-                              "Real Madrid",
+                              "Bayern Munchen",
                               style:
                                   TextStyle(fontSize: 17, color: Colors.white),
                             ),
@@ -1067,11 +1076,11 @@ class _DetailScreenState extends State<DetailScreen> {
                             Container(
                               width: 120,
                               height: 120,
-                              child: Image.asset("imge/LaLiga/real.jfif"),
+                              child: Image.asset("imge/Bundesliga/Wolfsburg.png"),
                             ),
                             Container(
                               child: Text(
-                                "Real Madrid",
+                                "Wolfsburg",
                                 style: TextStyle(
                                     fontSize: 17, color: Colors.white),
                               ),
@@ -1130,7 +1139,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                             height: 90,
                                             width: 90,
                                             child: Image.asset(
-                                                "imge/LaLiga/prsha.jfif"),
+                                                "imge/Bundesliga/FC-Bayern-Munchen.jfif"),
                                           ),
                                           Container(
                                             child: Text(
@@ -1342,8 +1351,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                           Container(
                                             height: 90,
                                             width: 90,
-                                            child:
-                                                Image.asset("imge/LaLiga/real.jfif"),
+                                            child: Image.asset("imge/Bundesliga/Wolfsburg.png"),
                                           ),
                                           Container(
                                             child: Text(
@@ -1445,7 +1453,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         child: Column(
                           children: [
                             Container(
-                              child: Image.asset("imge/LaLiga/prsha.jfif"),
+                              child: Image.asset("imge/Bundesliga/Wolfsburg.png"),
                             )
                           ],
                         ),
